@@ -18,13 +18,13 @@ public class Interaction {
     }
 
     public void addNewTask(){
-        System.out.print("\nInput uniq id: ");
+        System.out.println("\nInput uniq id: ");
         Integer id = scanner.nextInt();
-        System.out.print("\nInput task name: ");
+        System.out.println("Input task name: ");
         String name = scanner.nextLine();
-        System.out.print("\nInput task description: ");
+        System.out.println("Input task description: ");
         String description = scanner.nextLine();
-        System.out.print("\nInput date in the following format yyyy-MM-dd: ");
+        System.out.println("Input date in the following format yyyy-MM-dd: ");
         String stringDate = scanner.nextLine();
         Date date = parseDate(stringDate);
         map.put( id, new Task(id, name, description, date, false));
